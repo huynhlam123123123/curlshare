@@ -1,9 +1,9 @@
 ﻿<?php
  
 /* == ID tài khoản muốn tăng share == */
-$user = 'Link Chỉ lấy phần sao .com/';
+$user = 'Wellcome.To.The.Wall.SangBui';
 /* == Token tài khoản chứa page == */
-$token = 'EAAAAAYsX7TsBAEdetmoxqMJIN33CtIc6uodZAxgbZBTCMrvT4HxmYFlKrlKzKwWVUs4pkAFNndnsAgzcZCcbqSiqtSSILfxwoY6wZC3sZBI4nG3zyiwnL9taOMn9VE0JAhHcZBj43DpEJP7UG4AuPsM8XLdLum55RYKmdfUZBTYVoqsndizU9ZBxgCLHbjxgR4scLpeuMSBEnQZDZD';
+$token = 'EAAAAAYsX7TsBAB8Ent8QIXKIEjxKLuNpp1oEa5H4BSOEbYylQUVDjxRVsUCjZBoqCcVsbFOMCfpZCtwPRgG3QyrwLHyTGVJzTRqETbcgqsfAwCUck24m7alMn906PBjLZC9sbUL9s3zFw3FBaumSIUUzZAGzsm6TpzJNhZC9PxGFCo2wYaLln58NhoNFQtiqjTFq35A99KQZDZD';
 $accounts = json_decode(cURL('https://graph.facebook.com/me/accounts?access_token=' . $token),true);
  
 $feed = json_decode(cURL('https://graph.facebook.com/' . $user . '/feed?access_token='.$token.'&limit=1'),true);
